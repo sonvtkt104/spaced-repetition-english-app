@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spaced Repitition English App</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Home page -->
+        <div class="app-home flex-col-center ">
+            <h1 class="text-center app-home-title">
+                Spaced Repitition <br/> English
+            </h1>
+            <div class="flex-center">
+                <span class="app-feature app-feature-learn-now">
+                    Learn Now
+                </span>
+            </div>
+            <div class="flex-center">
+                <span class="app-feature app-feature-learn-word-level">
+                    Learn Word-level
+                </span>
+            </div>
+            <div class="flex-center">
+                <span class="app-feature app-feature-learn-all">
+                    Learn All
+                </span>
+            </div>
+            <div class="flex-center">
+                <span class="app-feature app-feature-add-new-word">
+                    Add New Word
+                </span>
+            </div>
+            <div class="flex-center">
+                <span class="app-feature app-feature-add-word-level">
+                    Add Word-level
+                </span>
+            </div>
+            <div class="flex-center">
+                <span class="app-feature app-feature-practice-memory">
+                    Practice Memory
+                </span>
+            </div>
+        </div>
+
+        <!-- Add new word page -->
+        <div class="app-add-new-word hide">
+            <h1 class="text-center app-home-title" style="padding-top:30px; position: relative;">
+                <span class="back-home">
+                    &lt;
+                </span>
+                Add New Word
+            </h1>
+            <div style="width: 80%; margin: auto">
+                <div class="flex" style="justify-content: space-between; margin-bottom: 20px">
+                    <span
+                        style="width:48%"
+                    >
+                        <input type="text" id="add-word-name" placeholder="New Word Name" 
+                            class="input-app"
+                            style="width: calc(100% - 40px);"
+                        />
+                    </span>
+                    <span
+                        style="width:48%"
+                    >
+                        <input type="text" id="add-word-pronunciation" placeholder="Pronunciation"
+                            class="input-app"
+                            style="width: calc(100% - 40px);"
+                        />
+                    </span>
+                </div>
+                <div class="flex" style="justify-content: space-between; margin-bottom: 20px">
+                    <span
+                        style="width:48%"
+                    >
+                        <input type="text" id="add-word-explain" placeholder="Explain"
+                            class="input-app"
+                            style="width: calc(100% - 40px);"
+                        />
+                    </span>
+                    <span
+                        style="width:48%"
+                    >
+                        <select type="text" id="add-word-word-level" placeholder="Word-level"
+                            class="input-app"
+                            style="width: calc(100%);"
+                        >
+                            
+                        </select>
+                    </span>
+                </div>
+                <div>
+                    <textarea
+                        id="add-word-example"
+                        class="input-app"
+                        style="width: calc(100% - 40px)"
+                        placeholder="Example"
+                        rows="3"
+                    ></textarea>
+                </div>
+            </div>
+            <div class="text-center" style="margin-top:20px">
+                <button class="btn-primary text-center">Add</button>
+            </div>
+        </div>
+
+        <!-- Add new word-level page -->
+        <div class="app-add-new-word-level hide">
+            <h1 class="text-center app-home-title" style="padding-top:30px; position: relative;">
+                <span class="back-home">
+                    &lt;
+                </span>
+                Add New Word-level
+            </h1>
+            <div style="width: 80%; margin: auto">
+                <div style="margin-bottom: 20px">
+                    <input type="text" id="add-word-level-name" placeholder="New Word-level Name" 
+                        class="input-app"
+                        style="width: calc(100% - 40px)"
+                    />
+                </div>
+            </div>
+            <div class="text-center" style="margin-top:20px">
+                <button class="btn-primary text-center">Add</button>
+            </div>
+        </div>
+
+        <!-- Learn page -->
+        <div class="app-learn hide">
+            <h1 class="text-center app-home-title" style="padding-top:30px; position: relative; z-index: 100;">
+                <span class="back-home" style="cursor: pointer;">
+                    &lt;
+                </span>
+                <span class="app-learn-title">
+                    Learn Now
+                </span>
+            </h1>
+            <div class="flex-col-center" style="position :absolute; inset: 0;">
+                <div class="app-learn-content">
+                    <div class="text-center app-learn-number" style="margin-bottom: 20px;">
+                        Total Words: 5/32
+                    </div>
+                    <div style="position: relative;">
+                        <div class="tag-front flex-col-center text-center">
+                            <div class="tag-learn flex-col-center text-center" >
+                                <div class="tag-word">
+                                    Hello word
+                                </div>
+                                <div class="tag-pronunciation">
+                                    hello/sww
+                                </div>
+                            </div>
+                            <div class="flex-col-center text-center tag-practice-memory hide" >
+                                <div class="tag-explain" style="font-size:20px; font-weight: 600; margin-bottom: 10px">
+                                    xin chao 
+                                </div>
+                                <div class="tag-word-level">
+                                    danh tu
+                                </div>
+                                <div>
+                                    <input type="text" placeholder="Enter a word"
+                                        class="input-app tag-input-word"
+                                        style="margin: 20px 0;"
+                                    >
+                                </div>
+                                <div>
+                                    <button
+                                        class="btn-primary tag-check"
+                                    >
+                                        Check
+                                    </button>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="tag-back flex-col-center text-center">
+                            <div class="tag-detail-word">
+                                Hello word
+                            </div>
+                            <div class="tag-detail-pronunciation" style="margin: 0px 0 10px;">
+                                hello/sww
+                            </div>
+                            <div class="tag-detail-word-level">
+                                Danh tu
+                            </div>
+                            <div class="tag-detail-explain">
+                                xin chao
+                            </div>
+                            <div style="margin: 20px 0 5px; font-weight: 600;">Example:</div>
+                            <div class="tag-detail-example">
+                                Hello world, welcome to the world in the world
+                            </div>
+                        </div>
+    
+                        <span class="next-tag">
+                            &gt;
+                        </span>
+    
+                        <span class="back-tag">
+                            &lt;
+                        </span>
+                    </div>
+                    <div class="text-center" style="margin-top:20px">
+                        <button class="app-learn-see-detail btn-primary">
+                            See detail
+                        </button>
+                        <button class="app-learn-back btn-primary">
+                            Back
+                        </button>
+                    </div>
+                </div>
+                <div class="text-center app-learn-content-not-word hide">
+                    No words yet
+                </div>
+                <div class="text-center app-learn-content-done hide"
+                    style="color: var(--color-green);
+                    font-size: 22px;
+                    font-weight: 600;"
+                >
+                    Done
+                </div>
+                
+            </div>
+            <div class="time-repeat flex">
+                <span class="option-time-repeat" value="0">
+                    Re-learn
+                </span>
+                <span class="option-time-repeat" value="1">
+                    1 day
+                </span>
+                <span class="option-time-repeat" value="2">
+                    2 day
+                </span>
+                <span class="option-time-repeat responsive-mobile" value="3">
+                    3 day
+                </span>
+                <span class="option-time-repeat" value="4">
+                    4 day
+                </span>
+                <span class="option-time-repeat" value="7">
+                    1 weed
+                </span>
+                <span class="option-time-repeat responsive-mobile" value="14">
+                    2 weed
+                </span>
+                <span class="option-time-repeat responsive-mobile" value="30">
+                    1 month
+                </span>
+            </div>
+        </div>
+
+        <!-- Choose Word-level -->
+        <div
+            style="position: absolute; inset: 0; z-index: 999; background: #ddf3ff;"
+            class="app-choose-word-level hide"
+        >
+            <h1 class="text-center app-home-title" style="padding-top:30px; position: relative; z-index: 100;">
+                <span class="back-home" style="cursor: pointer;">
+                    &lt;
+                </span>
+                <span>
+                    Choose Word-level
+                </span>
+            </h1>
+            <div
+                style="padding: 20px; width: calc(100% - 40px);"
+                class="choose-word-level"
+            >
+                <!-- <div
+                    style="width: 30%; float: left; padding: 0px calc(10% / 6) 20px ;text-align: center"
+                >
+                    <div style="background: var(--color-blue); padding: 20px 7px; border-radius: 6px; cursor: pointer"
+                        class="choose-word-level-item"
+                        value="hello"
+                    >
+                        hello
+                    </div>
+                </div> -->
+            </div>
+        </div> 
+
+        <!-- Notification -->
+        <div style="position: absolute; bottom: 0; right: 0; left: 0; height: 70px">
+            <div class="text-center fex-center">
+                <span class="notification">Done</span>
+            </div>
+        </div>
+           
+    </div>
+    <script src='./index.js'></script>
+</body>
+</html>
